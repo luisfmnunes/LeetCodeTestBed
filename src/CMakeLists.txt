@@ -1,2 +1,3 @@
 add_library(SolutionBase SolutionBase.cc)
 add_library(MedianSortedSolution MedianSortedSolution.cc)
+add_library(MedianSortedSolution2 MedianSortedSolution2.cc)
