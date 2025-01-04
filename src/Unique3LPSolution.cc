@@ -19,6 +19,7 @@ int Unique3LPSolution::Unique3LPalindromes(string s){
 
         for(int i = start+1; i < end; i++){
             pair[c.first].insert(s[i]);
+            if (pair[c.first].size() == 26) break;
         }
     }
 
