@@ -20,6 +20,10 @@ public:
         output_ = output;
     }
 
+    virtual const std::vector<std::string> getOutput() const{
+        return output_;
+    }
+
     virtual std::vector<int> parseIntVector(const std::string& str);
     virtual std::vector<float> parseFloatVector (const std::string& str);
     virtual std::vector<double> parseDoubleVector(const std::string& str);
