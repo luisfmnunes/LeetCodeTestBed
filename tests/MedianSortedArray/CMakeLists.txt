@@ -1,0 +1,4 @@
+add_executable(test_median_sorted_array test_median_sorted_array.cc)
+target_link_libraries(test_median_sorted_array MedianSortedSolution SolutionBase GTest::GTest GTest::Main)
+
+gtest_discover_tests(test_median_sorted_array)
