@@ -5,6 +5,9 @@ using namespace std;
 double MedianSortedSolution2::findMedianSortedArrays(const vector<int>& nums1, const vector<int>& nums2){
     int n1 = nums1.size(), n2 = nums2.size();
 
+    if(n1 > n2)
+        return findMedianSortedArrays(nums2, nums1);
+
     int n = n1 + n2;
     int left = (n + 1) >> 1;
     int low = 0, high = n1;
